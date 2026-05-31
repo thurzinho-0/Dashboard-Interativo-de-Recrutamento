@@ -1,80 +1,62 @@
-# Dashboard Interativo de Recrutamento
+# Dashboard Interativo de Recrutamento – Transporte & RH
 
-Este projeto combina **Python** e **Power BI** para criar um dashboard interativo que analisa todo o processo de recrutamento e contratação para o setor de transporte/logística. Ele é ideal para **RH, gestores de equipe ou analistas de dados**, fornecendo insights estratégicos sobre candidatos, aprovações e performance do processo seletivo.
+🚀 Este projeto foi desenvolvido para demonstrar como transformar dados brutos em **insights acionáveis** usando Python e Power BI.  
+Ele simula um cenário real de recrutamento para uma empresa de transporte/logística e constrói um dashboard interativo que pode ser utilizado por equipes de RH e gestores para **monitorar a eficiência do processo seletivo**.
 
----
+<img width="1055" height="623" alt="image" src="https://github.com/user-attachments/assets/8e3e13ff-0e6b-4d8c-8250-a2385a6001af" />
 
-## Sobre o Projeto
 
-O objetivo é simular um cenário real de recrutamento e demonstrar como dados podem ser transformados em decisões inteligentes:
+## 🔍 O Que Este Projeto Entrega
 
-- **Analisar candidatos por departamento e fonte de recrutamento**
-- **Medir performance do processo seletivo** (triagem, entrevista e contratação)
-- **Identificar gargalos e oportunidades de melhoria**
-- **Visualizar KPIs e estatísticas de forma clara e interativa**
-
-A primeira parte do projeto usa Python para gerar **100 candidatos fictícios**, com datas de inscrição, triagem, entrevista, decisão e status de contratação. Os dados são exportados para CSV e importados no Power BI para visualização.
-
----
-
-## Tecnologias Utilizadas
-
-- **Python 3.x**: geração e tratamento de dados (`pandas`, `numpy`)  
-- **Matplotlib e Seaborn**: gráficos exploratórios e verificação de dados  
-- **Power BI Desktop**: visualizações interativas e dashboards  
-- **CSV**: integração entre Python e Power BI  
-
----
-
-## Estrutura do Dashboard
-
-O dashboard contém:
-
-- **Donut Chart Duplo**: aprovação por departamento e status de contratação (Sim/Não)
-- **Gráficos de Barras**: taxa de contratação por departamento e por fonte
-- **Cartões KPI**:  
+📊 **Dashboard interativo no Power BI** com:
+- Visualizações modernas e informativas (donut charts, barras, KPIs, slicers)  
+- Análises estratégicas por **Departamento** e **Fonte de Recrutamento**  
+- Indicadores chave (KPIs):
   - % de aprovação na triagem  
   - % de aprovação na entrevista  
   - % de contratação final  
-- **Slicers Interativos**: filtro por departamento ou fonte de recrutamento
-- **Rótulos e tooltips** para fácil interpretação dos dados  
+  - Tempo médio gasto em cada etapa
 
-O layout foi pensado para **visualização rápida**, permitindo que qualquer gestor de RH identifique rapidamente performance e gargalos.
-
----
-
-## Como Reproduzir
-
-1. **Gerar dados fictícios com Python**:  
-   Execute o script `recrutamento_transporte.py` para criar o CSV.
-
-2. **Importar CSV no Power BI**:  
-   - `Obter dados → CSV → recrutamento_transporte.csv`  
-   - Carregue os dados e configure os gráficos.
-
-3. **Configurar visualizações**:  
-   - Crie donut charts, gráficos de barras e KPIs  
-   - Adicione Slicers para interatividade
+🧠 O dashboard permite filtros dinâmicos com *Slicers*, possibilitando:
+- Filtrar por departamento
+- Filtrar por fonte de recrutamento
+- Navegar entre aprovações e contratações  
+- Obter insights instantâneos sobre performance de recrutamento
 
 ---
 
-## Resultado Esperado
+## 🧱 Tecnologias Utilizadas
 
-O dashboard fornece **informações estratégicas de forma clara**:
-
-- Qual departamento tem maior aprovação ou taxa de contratação
-- Quais fontes de recrutamento são mais eficientes
-- Tempo médio gasto em cada etapa do processo seletivo
-
-É uma demonstração prática de como **dados podem guiar decisões de RH**, transformando informações em insights acionáveis.
-
----
-
-## Imagem do Dashboard
-<img width="1070" height="538" alt="image" src="https://github.com/user-attachments/assets/5d159c04-8642-4f9f-9940-6cb9f2444fe9" />
-
+| Ferramenta | Uso |
+|------------|-----|
+| **Python** | Geração de dados, cálculo de KPIs e exportação para CSV |
+| **Pandas & Numpy** | Manipulação e processamento de dados |
+| **Matplotlib & Seaborn** | Visualizações preliminares em Python |
+| **Power BI Desktop** | Construção do dashboard interativo |
+| **CSV** | Integração entre Python e Power BI |
 
 ---
 
-## Licença
-MIT License – livre para estudo, portfólio e projetos pessoais.****
+## 🛠️ Estrutura do Projeto
+
+1️⃣ **Código Python**  
+- Gera 100 candidatos fictícios  
+- Cria colunas de datas, aprovação e contratação  
+- Calcula métricas médias e exporta `recrutamento_transporte.csv`  
+
+2️⃣ **Arquivo CSV**  
+- Importado no Power BI para modelagem e visualização  
+
+3️⃣ **Dashboard no Power BI**  
+- Visualmente atrativo e funcional  
+- Interatividade com filtros e rótulos que facilitam a tomada de decisão
+
+---
+
+## 🧪 Como Reproduzir
+
+### 🔹 1. Executar o script Python
+Execute o código Python para gerar os dados fictícios:
+
+```bash
+python gerar_recrutamento.py
