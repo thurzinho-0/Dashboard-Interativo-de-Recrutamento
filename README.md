@@ -1,4 +1,4 @@
-# Dashboard Interativo de Recrutamento - Transporte
+# Dashboard Interativo de Recrutamento
 
 Este projeto combina **Python** e **Power BI** para criar um dashboard interativo que analisa todo o processo de recrutamento e contratação para o setor de transporte/logística. Ele é ideal para **RH, gestores de equipe ou analistas de dados**, fornecendo insights estratégicos sobre candidatos, aprovações e performance do processo seletivo.
 
